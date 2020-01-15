@@ -14,9 +14,13 @@ if (isNaN(input) || !Number.isInteger(input)) {
   //  use console.log to provide a usage statement when user forgets to enter a number
   console.log('Usage: node 4-hours-to-minutes <integer>');
 } else {
-  // TODO: create a variable named hours and calculate the whole number of hours using the / operator and .toFixed
-  // TODO: create a variable named minutes and calculate the number of minutes using the % (modulo) operator
-  // TODO: create a variable named hrs and use a ternary expression to determine whether there are singular or plural hours
-  // TODO: create a variable named mins and use a ternary expression to determine whether there are singular ot plural minutes
+  // create a variable named hours and calculate the whole number of hours using the / operator and .toFixed
+  let hours = (input / 60).toFixed();
+  // create a variable named minutes and calculate the number of minutes using the % (modulo) operator
+  let minutes = input % 60;
+  // : create a variable named hrs and use a ternary expression to determine whether there are singular or plural hours
+  let hrs = (hours == 1) ? "hour" : "hours";
+  // : create a variable named mins and use a ternary expression to determine whether there are singular ot plural minutes
+  let mins = (minutes == 1) ? "minute" : "minutes";
   console.log(`${input} minutes is ${hours} ${hrs} ${minutes} ${mins} `)
 }
