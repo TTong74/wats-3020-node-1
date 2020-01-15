@@ -16,10 +16,9 @@ if (isNaN(input) || !Number.isInteger(input)) {
   // use the if statement to test if integer is divisible by 2
   if (input % 2 == 0) {
     // use console.log with a template literal to report that the number is even
-    console.log(input + ' is even!');
-    //console.log('${input} is even!') template literal isn't working
+    console.log(`${input} is even!`);
   } else {
     // use console.log with a template literal to report that the number is odd
-    console.log(input + ' is odd!');
+    console.log(`${input} is odd!`);
   }
 }

@@ -9,9 +9,10 @@ let input = getargs.getIntegerArg();
 /**** Do not modify anything above this line ****/
 
 // test that input is a number
-// TODO check input using isNaN and NOT Number.isInteger 
-if () {
-  // TODO use console.log to provide a usage statement when user forgets to enter a number
+//  check input using isNaN and NOT Number.isInteger 
+if (isNaN(input) || !Number.isInteger(input)) {
+  //  use console.log to provide a usage statement when user forgets to enter a number
+  console.log('Usage: node 4-hours-to-minutes <integer>');
 } else {
   // TODO: create a variable named hours and calculate the whole number of hours using the / operator and .toFixed
   // TODO: create a variable named minutes and calculate the number of minutes using the % (modulo) operator

@@ -22,9 +22,9 @@ else {
   //  write a logical expression to test if the input contains a "hello"
   if (input.indexOf('hello') > -1) {
     //  use console.log and a template literal at what position the hello was found
-    console.log('hello was found at position ' + input.indexOf('hello'));
+    console.log(`hello was found at position ${input.indexOf('hello')}`);
   } else {
     //  use console.log to indicate that the hello was not found
-    console.log('hello was not found in the string ' + input + ".");
+    console.log(`hello was not found in the string ${input}.`);
   }
 }
