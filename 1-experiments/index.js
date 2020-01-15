@@ -55,7 +55,7 @@ console.log('s1:', s1, 's2:', s2, 's3:', s3)
 // test truthy/falsy using == for string, empty string, null and undefined
 // use ternary operator to determine if the value would be treated as true or false
 
-//TODO add the ternary operation to see how JS converts non boolean types into truthy/falsy
+
 console.log("---- Test truthy/falsy using ternary operator ----")
 console.log("string is  ", STRING_VALUE ? true : false)
 console.log("int is ", INT_VALUE ? true : false)
